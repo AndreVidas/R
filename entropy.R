@@ -5,7 +5,6 @@ entropy <- function(S){
     
     H <- numeric(length(S))
     for(i in 1:length(S)){
-        # calculate empiric probability
         if(S[i] == 0){ # boundary case: 0*log2(0) -> 0
             H[i] <- 0
         }
@@ -14,6 +13,7 @@ entropy <- function(S){
         }
     }
     H_S <- -sum(H)
+    
     return(H_S)
 }
 
