@@ -18,3 +18,4 @@ entropy <- function(S, normalize = FALSE){
     return(H_S)
 }
 
+
